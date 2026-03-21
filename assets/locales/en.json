@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Jowita Kruk – Portfolio"
+  },
+  "hero": {
+    "name": "Jowita Kruk",
+    "subtitle": "Junior Software Developer.",
+    "cta": "See projects"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I have been passionate about computers and new technologies since I was a child...",
+    "p2": "A few years later I started learning JavaScript to create Minecraft plugins..."
+  },
+  "projects": {
+    "web": {
+      "title": "Websites"
+    }
+  },
+  "contact": {
+    "title": "Want to ask me a question?",
+    "questionLabel": "Question",
+    "questionPlaceholder": "Ask a question...",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email...",
+    "send": "Send"
+  }
+}

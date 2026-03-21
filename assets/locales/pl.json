@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title":"Jowita Kruk - Portfolio"
+  },
+  "hero": {
+    "name": "Jowita Kruk",
+    "subtitle": "Junior Software Developer.",
+    "cta": "Zobacz projekty"
+  },
+  "about": {
+    "title": "O mnie",
+    "p1": "Od najmłodszych lat pasjonuję się informatyką i nowymi technologiami...",
+    "p2": "Kilka lat później zaczęłam uczyć się JavaScriptu, aby tworzyć pluginy do Minecrafta..."
+  },
+  "projects": {
+    "web": {
+      "title": "Strony internetowe"
+    }
+  },
+
+  "contact": {
+    "title": "Chcesz zadać mi pytanie?",
+    "questionLabel": "Pytanie",
+    "questionPlaceholder": "Zadaj pytanie...",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Wpisz e-mail...",
+    "send": "Wyślij"
+  }
+}
