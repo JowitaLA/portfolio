@@ -38,6 +38,7 @@
   },
 
   "projects": {
+    "title": "Projects",
     "web": {
       "title": "Websites",
 
@@ -96,7 +97,8 @@
   },
 
   "contact": {
-    "title": "Do you have a question?",
+    "title": "Contact",
+    "question": "Do you have a question?",
     "questionLabel": "Question",
     "questionPlaceholder": "Ask your question...",
     "emailLabel": "E-mail",
@@ -105,11 +107,13 @@
     "success1Message": "Thank you for your message",
     "success2Message": "I will respond as soon as possible.",
     "error1Message": "An error occurred on the page",
-    "error2Message": "I apologize for the issues. Please write directly to the email: "
+    "error2Message": "I apologize for the issues. Please write directly to the email: ",
+    "address": "Address",
+    "country": "Poland"
   },
 
   "footer": {
-    "adress": "Address",
-    "copyright": "Copyright &copy; Jowita Kruk "
+    "copyright": "Copyright © Jowita Raven ",
+    "copyright2": "All rights reserved."
   }
 }

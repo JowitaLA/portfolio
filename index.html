@@ -22,9 +22,9 @@
 <body class="bg-black">
   <nav class="p-3 raw d-flex justify-content-between align-items-center sticky-top bg-black transparent">
     <div class="d-flex gap-3">
-      <a href="#about" class="text-decoration-none text-white" data-i18n="nav.about">O mnie</a>
-      <a href="#projects" class="text-decoration-none text-white" data-i18n="nav.projects">Projekty</a>
-      <a href="#contact" class="text-decoration-none text-white" data-i18n="nav.contact">Kontakt</a>
+      <a href="#about" class="text-decoration-none text-white" data-i18n="about.title"></a>
+      <a href="#projects" class="text-decoration-none text-white" data-i18n="projects.title"></a>
+      <a href="#contact" class="text-decoration-none text-white" data-i18n="contact.title"></a>
     </div>
 
     <div class="d-flex justify-content-end gap-2">
@@ -252,7 +252,7 @@
       <div class="row gx-4 gx-lg-5">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-4">Chcesz zadać mi pytanie?</h2>
+          <h2 class="text-white mb-4" data-i18n="contact.question"></h2>
 
           <!-- Wariant FORMSPREE (zamień endpoint na własny) -->
           <form class="form-signup" action="https://formspree.io/f/yourFormId" method="POST">
@@ -286,11 +286,11 @@
           <div class="card py-3 h-100">
             <div class="card-body text-center">
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Adres</h4>
+              <h4 class="text-uppercase m-0" data-i18n="contact.address"></h4>
               <hr class="my-3 mx-auto" />
               <div class="small text-black-50">
-                <a class="text-decoration-none" href="https://maps.app.goo.gl/jem5HepJgDEMiASf7" rel="noopener">
-                  Dąbrowa Górnicza <br> Polska
+                <a class="text-decoration-none" href="https://maps.app.goo.gl/jem5HepJgDEMiASf7" rel="noopener" data-i18n="contact.addressDesc">
+                Dąbrowa Górnicza <br> <span data-i18n="contact.country"></span>
                 </a>
               </div>
             </div>
@@ -336,9 +336,11 @@
           </div>
         </div>
       </div>
-      <div class="small text-light-50 mt-4 no-select" style="text-align: center;">
-        Copyright &copy; Jowita Kruk <span id="current-year"></span>
+      <div class="small text-white-50 mt-4 no-select" style="text-align: center;">
+        <span data-i18n="footer.copyright"></span>
+        <span id="currentYear"></span>
       </div>
+      <div class="small text-white-50 mb-4 no-select" style="text-align: center;" data-i18n="footer.copyright2"></div>
       <!-- row -->
     </div>
     <!-- container -->
@@ -346,11 +348,10 @@
 
   <!-- JS (Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/mainView.js"></script>
-  <script src="assets/js/i18n.js"></script>
-
 </body>
 
 </html>

@@ -15,8 +15,6 @@
     "p2": "Kilka lat później, chcąc ulepszyć wspólną rozgrywkę w Minecraft, zaczęłam uczyć się JavaScriptu, by tworzyć i edytować pluginy. Z czasem to właśnie programowanie stało się moją pasją, a dalsza edukacja tylko ją pogłębiła. W liceum, na rozszerzonej informatyce, zaczęłam naukę języka C++, co okazało się niezwykle pomocne na studiach informatycznych. Tam miałam okazję pracować z różnymi językami programowania, będąc często na poziomie osób z technikum, mających do czynienia z nimi wcześniej. Największą satysfakcję sprawiało mi jednak tworzenie stron internetowych sprawiając, że poszłam na kierunek z tym związany.",
     "p3": "Jestem osobą kreatywną, otwartą na rozwój i nowe wyzwania, co również towarzyszyło mi od najmłodszych lat. Technologia nieustannie się zmienia, dlatego chętnie poszerzam swoje umiejętności, w tym również uczę się coraz to popularniejszych frameworków. Mam doświadczenie w zarządzaniu projektami oraz organizacji pracy, przez co efektywniej realizuję powierzone mi zadania.",
   
-    "button": "Dowiedz się więcej",
-
     "cvTitle": "Moje CV",
     "cvDescription": "(Kliknij w CV by powiększyć)",
     "cvButton": "Pobierz w formacie PDF",
@@ -38,6 +36,7 @@
   },
 
   "projects": {
+    "title": "Projekty",
     "web": {
       "title": "Strony internetowe",
 
@@ -96,7 +95,8 @@
   },
 
   "contact": {
-    "title": "Chcesz zadać mi pytanie?",
+    "title": "Kontakt",
+    "question": "Chcesz zadać mi pytanie?",
     "questionLabel": "Pytanie",
     "questionPlaceholder": "Zadaj pytanie...",
     "emailLabel": "E-mail",
@@ -105,11 +105,14 @@
     "success1Message": "Dziękuję za wiadomość",
     "success2Message": "Odpowiem tak szybko, jak to możliwe.",
     "error1Message": "Wystąpił błąd na stronie",
-    "error2Message": "Przepraszam za problemy. Napisz bezpośrednio na maila: "
+    "error2Message": "Przepraszam za problemy. Napisz bezpośrednio na maila: ",
+    "address": "Adres",
+    "country": "Polska"
   },
 
   "footer": {
-    "adress": "Adres",
-    "copyright": "Copyright &copy; Jowita Kruk "
+    "copyright": "Copyright © Jowita Kruk ",
+    "copyright2": "Wszelkie prawa zastrzeżone."
+
   }
 }
