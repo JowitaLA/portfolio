@@ -1,32 +1,115 @@
 {
   "meta": {
-    "title": "Portfolio: Jovita Raven"
+    "title":"Portfolio: Jowita Raven"
   },
 
   "header": {
-    "name": "Jovita Raven",
+    "name": "Jowita Raven",
     "subtitle": "Junior Software Developer.",
     "cta": "See projects"
   },
 
   "about": {
     "title": "About",
-    "p1": "Since I was a child, I have been passionate about computers and new technologies. My adventure with computers started with playing games with my siblings, but the real fascination began on my 16th birthday when I received money for my first computer. With the help of my cousin, I chose the right components and then assembled and configured it myself, which had a big impact on my interest in technology.",
-    "p2": "A few years later, wanting to improve our shared gameplay in Minecraft, I started learning JavaScript to create and edit plugins. Over time, programming became my passion, and further education only deepened it. In high school, in advanced computer science classes, I started learning C++, which proved to be extremely helpful in my computer science studies. There, I had the opportunity to work with various programming languages, often being at the level of people from technical schools who had dealt with them before. However, the greatest satisfaction came from creating websites, which led me to pursue a related field of study.",
-    "p3": "I am a creative person, open to development and new challenges, which has also accompanied me since I was a child. Technology is constantly changing, so I am eager to expand my skills, including learning increasingly popular frameworks. I have experience in project management and work organization, which allows me to more effectively carry out the tasks entrusted to me."
-  },
+    "p1": "Since I was a child, I have been passionate about computer science and new technologies. My journey with computers started with playing games together with my family, but my true fascination began on the day of my 16th birthday, when I received money for my first computer. With the help of my cousin, I selected the right components, and then assembled and configured it myself, which had a significant impact on my interest in technology.",
+    "p2": "A few years later, wanting to improve our shared Minecraft gameplay, I started learning JavaScript to create and edit plugins. Over time, programming became my passion, and further education only deepened it. In high school, studying computer science at an advanced level, I began learning the C++ language, which proved to be extremely helpful during my university studies in computer science. There, I had the opportunity to work with various programming languages, often at a level comparable to those from vocational schools who had been dealing with them before. The greatest satisfaction came from creating websites, which led me to choose this field of study.",
+    "p3": "I am a creative person, open to development and new challenges, which has also been a constant in my life since childhood. Technology is constantly evolving, so I eagerly expand my skills, including learning increasingly popular frameworks. I have experience in project management and work organization, which allows me to more effectively implement assigned tasks.",
   
+    "button": "See more",
+
+    "cvTitle": "My CV",
+    "cvDescription": "(Click on CV to enlarge)",
+    "cvButton": "Download in PDF format",
+
+    "traitsTitle": "My strengths and weaknesses",
+    "strengthsTitle": "Strengths",
+    "strengths": [
+      "I learn quickly",
+      "Good work organization",
+      "Creativity",
+      "Openness to new technologies"
+    ],
+    "weaknessesTitle": "Weaknesses",
+    "weaknesses": [
+      "Lack of professional experience",
+      "Impatience",
+      "Excessive self-criticism"
+    ]
+  },
+
   "projects": {
     "web": {
-      "title": "Websites"
+      "title": "Websites",
+
+      "monwizTitle": "Monwiz: RPG game",
+      "monwizDescription": "Monwiz is a pixel-art RPG game created with the Phaser framework as my engineering thesis. The player embodies an adventurer exploring a mysterious fantasy world full of challenges. During the journey, they encounter NPCs who may assign quests depending on their level, and face numerous challenges and battles.",
+      "monwizButton": "Check temporary website",
+
+      "yupsTitle": "Yups: internet store",
+      "yupsDescription": "YUPS! is an authorial internet store where I utilized my skills in Bootstrap. I created it from scratch, ensuring full functionality - from login and payments via tPay, to managing orders, wishlists, and customer data. The system also allows tracking of statuses, such as the number of orders or registrations, as well as browsing purchase history.",
+      "yupsButton": "Check website",
+
+      "playhuntTitle": "Playhunt: fictional betting website",
+      "playhuntDescription": "Playhunt is a fictional betting website based on the game Hunt: Showdown, allowing users to bet on virtual „walk” outcomes. It was my first web project during studies, which I later refined. After registration, users receive a fictional currency they can use to place bets. Once the event concludes and results are announced, players who correctly predicted the winners receive additional tokens for continued play. The site was developed in PHP using Smarty and Medoo libraries, with a lightweight and responsive design based on Pure.css.",
+      "playhuntButton": "In the process of migration",
+
+      "quizowTitle": "Quizow: fictional quiz website",
+      "quizowDescription": "Quizow is a fictional quiz website created with the idea of gathering tests from various fields of knowledge. It is one of the projects I wrote during my studies. Users can test their knowledge by solving thematic quizzes, which cover a wide range of categories - from exact sciences to culture and entertainment. The site also allows tracking of results, analysis of correct and incorrect answers, and competition with other users, where only the first attempt counts. The site was written in PHP using Smarty and Medoo libraries, and its appearance is based on a lightweight and responsive Pure.css.",
+      "quizowButton": "In the process of migration",
+
+      "menuTitle": "Menu restaurant",
+      "menuDescription": "This project was created by me within two days and aims to facilitate restaurant owners in GTA RP in creating their own menu without the need for code intervention. The entire project is based on a single HTML file, making it easy for those unfamiliar with programming to run the creator, while server owners don't have to worry about additional hosting. <br>The creator allows adding, editing, and deleting categories, dishes, drinks, and their prices. Additionally, it enables generating ready-to-use code for insertion into game files. For greater convenience and security, local saving of progress is also provided, protecting against data loss in case of accidental closure of the creator.",
+      "menuButton": "Download creator"
     }
   },
+
+  "mobile": {
+    "title": "Mobile applications",
+
+    "defaultTitle": "No view",
+    "defaultDescription": "There are no projects in this category yet." 
+  },
+
+  "graphics": {
+    "title": "Graphic projects",
+
+    "onelifeTitle": "OneLife",
+    "onelifeDescription": "Project I spent a lot of time on, mainly due to the manual creation of the text and the addition of a neon glow. The text was presented in several variants: as a GIF on a black background, a WebP file without a background, and a 128x128 icon in the same versions. The creation of the text was done in the program Krita, and the entire recording was realized in DaVinci Resolve, where the background, including music, city sounds, and smoke effect, was added.",
+    "onelifeInfo": "(Click on the thumbnails to enlarge)",
+
+    "nocSwietojanskaTitle": "Poster ''Noc Świętojańska''",
+    "nocSwietojanskaDescription": "Poster was created in Canva, and the conversation with the client had a key impact on the final appearance of the project. Thanks to her valuable suggestions, the poster went through several metamorphoses. Different variants were developed, and finally, the one that best matched her expectations and vision was chosen.",
+    "nocSwietojanskaInfo": "(Click on the poster to enlarge)",
+
+    "ulotkaLatowiczTitle": "Election Flyer",
+    "ulotkaLatowiczDescription": "Flyer designed in Canva for candidates for the city council of Latowicz. After consultations with clients, the flyer was created in a way that would accommodate a large amount of text, match the candidates' image, and feature a modern and simple design. Due to the fact that each flyer for candidates was presented in the same way, one of them is shown.",
+    "ulotkaLatowiczInfo": "(Click on the flyer to enlarge)",
+
+    "banerLatowiczTitle": "Election Banner",
+    "banerLatowiczDescription": "Banner designed in Canva for candidates for the city council of Latowicz. After consultations with clients, the banner was created in a way that would accommodate a large amount of text, match the candidates' image, and feature a modern and simple design. Due to the fact that each banner for candidates was presented in the same way, one of them is shown.",
+    "banerLatowiczInfo": "(Click on the banner to enlarge)"
+  },
+
+  "controls": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+
   "contact": {
-    "title": "Want to ask me a question?",
+    "title": "Do you have a question?",
     "questionLabel": "Question",
-    "questionPlaceholder": "Ask a question...",
-    "emailLabel": "Email",
-    "emailPlaceholder": "Enter your email...",
-    "send": "Send"
+    "questionPlaceholder": "Ask your question...",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "Enter your e-mail...",
+    "send": "Send",
+    "success1Message": "Thank you for your message",
+    "success2Message": "I will respond as soon as possible.",
+    "error1Message": "An error occurred on the page",
+    "error2Message": "I apologize for the issues. Please write directly to the email: "
+  },
+
+  "footer": {
+    "adress": "Address",
+    "copyright": "Copyright &copy; Jowita Kruk "
   }
 }
