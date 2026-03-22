@@ -1,17 +1,21 @@
 {
   "meta": {
-    "title": "Jowita Kruk – Portfolio"
+    "title": "Portfolio: Jovita Raven"
   },
-  "hero": {
-    "name": "Jowita Kruk",
+
+  "header": {
+    "name": "Jovita Raven",
     "subtitle": "Junior Software Developer.",
     "cta": "See projects"
   },
+
   "about": {
-    "title": "About me",
-    "p1": "I have been passionate about computers and new technologies since I was a child...",
-    "p2": "A few years later I started learning JavaScript to create Minecraft plugins..."
+    "title": "About",
+    "p1": "Since I was a child, I have been passionate about computers and new technologies. My adventure with computers started with playing games with my siblings, but the real fascination began on my 16th birthday when I received money for my first computer. With the help of my cousin, I chose the right components and then assembled and configured it myself, which had a big impact on my interest in technology.",
+    "p2": "A few years later, wanting to improve our shared gameplay in Minecraft, I started learning JavaScript to create and edit plugins. Over time, programming became my passion, and further education only deepened it. In high school, in advanced computer science classes, I started learning C++, which proved to be extremely helpful in my computer science studies. There, I had the opportunity to work with various programming languages, often being at the level of people from technical schools who had dealt with them before. However, the greatest satisfaction came from creating websites, which led me to pursue a related field of study.",
+    "p3": "I am a creative person, open to development and new challenges, which has also accompanied me since I was a child. Technology is constantly changing, so I am eager to expand my skills, including learning increasingly popular frameworks. I have experience in project management and work organization, which allows me to more effectively carry out the tasks entrusted to me."
   },
+  
   "projects": {
     "web": {
       "title": "Websites"

@@ -1,21 +1,98 @@
 {
   "meta": {
-    "title":"Jowita Kruk - Portfolio"
+    "title":"Portfolio: Jowita Kruk"
   },
-  "hero": {
+
+  "header": {
     "name": "Jowita Kruk",
     "subtitle": "Junior Software Developer.",
     "cta": "Zobacz projekty"
   },
+
   "about": {
     "title": "O mnie",
-    "p1": "Od najmłodszych lat pasjonuję się informatyką i nowymi technologiami...",
-    "p2": "Kilka lat później zaczęłam uczyć się JavaScriptu, aby tworzyć pluginy do Minecrafta..."
+    "p1": "Od najmłodszych lat pasjonuję się informatyką i nowymi technologiami. Moja przygoda z komputerami zaczęła się od wspólnego grania z rodzeństwem, jednak prawdziwa fascynacja rozpoczęła się w dniu moich 16 urodzin, kiedy otrzymałam pieniądze na swój pierwszy komputer. Z pomocą kuzyna dobrałam odpowiednie podzespoły, a następnie samodzielnie go złożyłam i skonfigurowałam, co miało duży wpływ na moje zainteresowanie technologią.",
+    "p2": "Kilka lat później, chcąc ulepszyć wspólną rozgrywkę w Minecraft, zaczęłam uczyć się JavaScriptu, by tworzyć i edytować pluginy. Z czasem to właśnie programowanie stało się moją pasją, a dalsza edukacja tylko ją pogłębiła. W liceum, na rozszerzonej informatyce, zaczęłam naukę języka C++, co okazało się niezwykle pomocne na studiach informatycznych. Tam miałam okazję pracować z różnymi językami programowania, będąc często na poziomie osób z technikum, mających do czynienia z nimi wcześniej. Największą satysfakcję sprawiało mi jednak tworzenie stron internetowych sprawiając, że poszłam na kierunek z tym związany.",
+    "p3": "Jestem osobą kreatywną, otwartą na rozwój i nowe wyzwania, co również towarzyszyło mi od najmłodszych lat. Technologia nieustannie się zmienia, dlatego chętnie poszerzam swoje umiejętności, w tym również uczę się coraz to popularniejszych frameworków. Mam doświadczenie w zarządzaniu projektami oraz organizacji pracy, przez co efektywniej realizuję powierzone mi zadania.",
+  
+    "button": "Dowiedz się więcej",
+
+    "cvTitle": "Moje CV",
+    "cvDescription": "(Kliknij w CV by powiększyć)",
+    "cvButton": "Pobierz w formacie PDF",
+
+    "traitsTitle": "Moje mocne i słabe strony",
+    "strengthsTitle": "Mocne strony",
+    "strengths": [
+      "Szybko się uczę",
+      "Dobra organizacja pracy",
+      "Kreatywność",
+      "Otwartość na nowe technologie"
+    ],
+    "weaknessesTitle": "Słabe strony",
+    "weaknesses": [
+      "Brak doświadczenia zawodowego",
+      "Niecierpliwość",
+      "Nadmierna samokrytyka"
+    ]
   },
+
   "projects": {
     "web": {
-      "title": "Strony internetowe"
+      "title": "Strony internetowe",
+
+      "monwizTitle": "Monwiz: gra MMORPG",
+      "monwizDescription": "Monwiz to pixel-artowa gra RPG stworzona w frameworku Phaser jako moja praca inżynierska. Gracz wciela się w poszukiwacza przygód, eksplorując tajemniczy świat fantasy pełen wyzwań. W trakcie podróży spotyka NPC-ów, którzy mogą zlecać zadania zależne od jego poziomu, oraz stawia czoła licznym wyzwaniom i walkom.",
+      "monwizButton": "Sprawdź tymczasową stronę",
+
+      "yupsTitle": "Yups: sklep internetowy",
+      "yupsDescription": "YUPS! to autorski sklep internetowy, w którym wykorzystałam swoje umiejętności w Bootstrapie. Stworzyłam go od podstaw, zapewniając pełną funkcjonalność-od logowania i płatności przez tPay, po zarządzanie zamówieniami, listami życzeń oraz danymi klientów. System umożliwia także śledzenie statusów, takich jak liczba zamówień czy rejestracji, oraz przeglądanie historii zakupów.",
+      "yupsButton": "Sprawdź stronę",
+
+      "playhuntTitle": "Playhunt: fikcyjna strona bukmacherska",
+      "playhuntDescription": "Playhunt to fikcyjna strona bukmacherska oparta na grze Hunt: Showdown, umożliwiająca obstawianie wyników wirtualnych „walk”. Powstała jako mój pierwszy projekt webowy na studiach, który później nieco udoskonaliłam. Po rejestracji użytkownik otrzymuje fikcyjną walutę, którą może wykorzystać do stawiania zakładów. Po zakończeniu wydarzenia i ogłoszeniu wyników, gracze, którzy poprawnie wytypowali zwycięzców, otrzymują dodatkowe żetony do dalszej gry. Strona została napisana w PHP z wykorzystaniem bibliotek Smarty i Medoo, a jej wygląd oparto na lekkim i responsywnym Pure.css.",
+      "playhuntButton": "W trakcie przenoszenia",
+
+      "quizowTitle": "Quizow: fikcyjna strona z quizami",
+      "quizowDescription": "Quizow to strona internetowa stworzona z myślą o gromadzeniu testów z różnych dziedzin wiedzy. Jest ona jednym z projektów, który został napisany na studiach. Użytkownicy mogą sprawdzać swoją wiedzę, rozwiązując quizy tematyczne, które obejmują szeroki zakres kategori - od nauk ścisłych po kulturę i rozrywkę. Strona umożliwia także śledzenie wyników, analizę poprawnych i błędnych odpowiedzi oraz rywalizację z innymi użytkownikami, z którymi można sprawdzić wynik i czas wykonanego quizu, gdzie liczy się tylko ,,pierwsze przejście''. Strona została napisana w PHP z wykorzystaniem bibliotek Smarty i Medoo, a jej wygląd oparto na lekkim i responsywnym Pure.css.",
+      "quizowButton": "W trakcie przenoszenia",
+
+      "menuTitle": "Menu restauracji",
+      "menuDescription": "Projekt ten został stworzony przeze mnie w ciągu dwóch dni i ma na celu ułatwienie właścicielom  restauracji w grze GTA RP tworzenie własnego menu bez konieczności ingerencji w kod. Całość oparta  jest na jednym pliku HTML, co sprawia, że osoby niezaznajomione z programowaniem mogą z łatwością uruchomić  kreator, a właściciele serwerów nie muszą martwić się o dodatkowe hostowanie. <br>Kreator umożliwia dodawanie, edytowanie oraz usuwanie kategorii, dań, napojów i ich cen. Dodatkowo pozwala na generowanie gotowego kodu do wklejenia w plikach gry. Dla większej wygody i bezpieczeństwa przewidziano również lokalne zapisywanie postępu, co chroni przed utratą danych w przypadku przypadkowego zamknięcia kreatora.",
+      "menuButton": "Pobierz kreator"
     }
+  },
+
+  "mobile": {
+    "title": "Aplikacje mobilne",
+
+    "defaultTitle": "Brak widoku",
+    "defaultDescription": "Nie ma jeszcze żadnych projektów w tej kategorii." 
+  },
+
+  "graphics": {
+    "title": "Projekty graficzne",
+
+    "onelifeTitle": "OneLife",
+    "onelifeDescription": "Projekt, nad którym spędziłam sporo czasu, głównie z powodu ręcznego stworzenia napisu oraz dodania neonowej poświaty. Napis został zaprezentowany w kilku wariantach: jako GIF na czarnym tle, plik WebP bez tła oraz ikona 128x128 w tych samych wersjach. Tworzenie napisów odbyło się w programie Krita, a całe nagranie zostało zrealizowane w DaVinci Resolve, gdzie dodano tło, w tym muzykę, odgłosy miasta oraz efekt dymu.",
+    "onelifeInfo": "(Kliknij miniatury, aby powiększyć)",
+
+    "nocSwietojanskaTitle": "Plakat ''Noc Świętojańska''",
+    "nocSwietojanskaDescription": "Plakat został stworzony w Canvie, a sama rozmowa z klientką miała kluczowy wpływ na ostateczny wygląd projektu. Dzięki jej cennym sugestiom, plakat przeszedł kilka metamorfoz. Opracowane zostały różne warianty, a finalnie wybrany został ten, który najlepiej odpowiadał jej oczekiwaniom i wizji.",
+    "nocSwietojanskaInfo": "(Kliknij w plakat by powiększyć)",
+
+    "ulotkaLatowiczTitle": "Ulotka wyborcza",
+    "ulotkaLatowiczDescription": "Ulotka zaprojektowana w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach z klientami, ulotka została stworzona w taki sposób, aby pomieścić dużą ilość tekstu, kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i prostym designem. Ze względu na to, że każda ulotka dla kandydatów została zaprezentowana w ten sam sposób, przedstawiona jest jedna z nich.",
+    "ulotkaLatowiczInfo": "(Kliknij w ulotkę by powiększyć)",
+
+    "banerLatowiczTitle": "Baner wyborczy",
+    "banerLatowiczDescription": "Baner zaprojektowany w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach z klientami, baner został stworzony w taki sposób, aby kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i prostym designem. Ze względu na to, że każdy baner dla kandydatów został zaprezentowany w ten sam sposób, przedstawiony jest jeden z nich.",
+    "banerLatowiczInfo": "(Kliknij w baner by powiększyć)"
+  },
+
+  "controls": {
+    "previous": "Poprzedni",
+    "next": "Następny"
   },
 
   "contact": {
@@ -24,6 +101,15 @@
     "questionPlaceholder": "Zadaj pytanie...",
     "emailLabel": "E-mail",
     "emailPlaceholder": "Wpisz e-mail...",
-    "send": "Wyślij"
+    "send": "Wyślij",
+    "success1Message": "Dziękuję za wiadomość",
+    "success2Message": "Odpowiem tak szybko, jak to możliwe.",
+    "error1Message": "Wystąpił błąd na stronie",
+    "error2Message": "Przepraszam za problemy. Napisz bezpośrednio na maila: "
+  },
+
+  "footer": {
+    "adress": "Adres",
+    "copyright": "Copyright &copy; Jowita Kruk "
   }
 }
