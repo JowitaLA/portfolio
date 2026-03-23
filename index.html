@@ -28,6 +28,8 @@
     </div>
 
     <div class="d-flex justify-content-end gap-2">
+      <a href="#" id="themeToggle" class="text-decoration-none text-white">Motyw</a>
+
       <a data-setlang="pl" class="text-decoration-none text-white">PL</a>
       <a data-setlang="en" class="text-decoration-none text-white">EN</a>
     </div>
@@ -58,30 +60,196 @@
     </div>
   </section>
 
-  <!-- PROJEKTY: STRONY WWW -->
   <section class="projects-section" id="projects">
-    <h3 class="text-white text-center mb-4" data-i18n="projects.web.title"></h3>
 
+    <h3 class="text-white text-center mb-4">Strony internetowe</h3>
     <div id="webs" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- Slide 1 -->
+        <!-- 1. Monwiz -->
         <div class="carousel-item active">
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
             <div class="col-xl-1 col-lg-1"></div>
             <div class="col-xl-5 col-lg-5">
-              <img class="img-fluid mb-3 mb-lg-0 border rounded" src="assets/img/webs/Monwiz.png"
-                alt="Monwiz – gra RPG w Phaser" />
+              <img class="img-fluid-border mb-3 mb-lg-0" src="assets/img/webs/Monwiz.png" alt="Monwiz" />
             </div>
             <div class="col-xl-5 col-lg-5 d-flex flex-column">
               <div class="featured-text text-center">
-                <h4 class="text-white">Monwiz</h4>
+                <h4 class="text-white" data-i18n="projects.web.monwizTitle"></h4>
+                <p class="text-white-50" data-i18n="projects.web.monwizDescription"></p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <a href="https://monwiz.5v.pl/" class="btn btn-primary" role="button"
+                  data-i18n="projects.web.monwizButton"></a>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1"></div>
+          </div>
+        </div>
+
+        <!-- 2. Yups -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
+            <div class="col-xl-1 col-lg-1"></div>
+            <div class="col-xl-5 col-lg-5">
+              <img class="img-fluid-border mb-3 mb-lg-0" src="assets/img/webs/Yups.png" alt="Yups" />
+            </div>
+            <div class="col-xl-5 col-lg-5 d-flex flex-column">
+              <div class="featured-text text-center">
+                <h4 class="text-white" data-i18n="projects.web.yupsTitle"></h4>
+                <p class="text-white-50" data-i18n="projects.web.yupsDescription"></p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <a href="https://sklep-yups.pl" class="btn btn-primary" role="button"
+                  data-i18n="projects.web.yupsButton"></a>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1"></div>
+          </div>
+        </div>
+
+        <!-- 3. PlayHunt -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
+            <div class="col-xl-1 col-lg-1"></div>
+            <div class="col-xl-5 col-lg-5">
+              <img class="img-fluid-border mb-3 mb-lg-0" src="assets/img/webs/PlayHunt.png" alt="PlayHunt" />
+            </div>
+            <div class="col-xl-5 col-lg-5 d-flex flex-column">
+              <div class="featured-text text-center">
+                <h4 class="text-white" data-i18n="projects.web.playhuntTitle"></h4>
+                <p class="text-white-50" data-i18n="projects.web.playhuntDescription"></p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <button class="btn btn-primary" id="submitButton" type="submit"
+                  data-i18n="projects.web.playhuntButton"></button>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1"></div>
+          </div>
+        </div>
+
+        <!-- 4. Quizow -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
+            <div class="col-xl-1 col-lg-1"></div>
+            <div class="col-xl-5 col-lg-5">
+              <img class="img-fluid-border mb-3 mb-lg-0" src="assets/img/webs/Quizow.png" alt="Quizow" />
+            </div>
+            <div class="col-xl-5 col-lg-5 d-flex flex-column">
+              <div class="featured-text text-center">
+                <h4 class="text-white" data-i18n="projects.web.quizowTitle"></h4>
+                <p class="text-white-50" data-i18n="projects.web.quizowDescription"></p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <button class="btn btn-primary" id="submitButton" type="submit"
+                  data-i18n="projects.web.quizowButton"></button>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1"></div>
+          </div>
+        </div>
+
+        <!-- 5. Menu -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
+            <div class="col-xl-1 col-lg-1"></div>
+            <div class="col-xl-5 col-lg-5">
+              <img class="img-fluid-border mb-3 mb-lg-0" src="assets/img/webs/KreatorMenu.png" alt="Menu" />
+            </div>
+            <div class="col-xl-5 col-lg-5 d-flex flex-column">
+              <div class="featured-text text-center">
+                <h4 class="text-white" data-i18n="projects.web.menuTitle"></h4>
+                <p class="text-white-50" data-i18n="projects.web.menuDescription"></p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <a href="assets/downloads/Kreator_Menu.html" class="btn btn-primary" download data-i18n="projects.web.menuButton"></a>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strzałki nawigacyjne -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#webs" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" data-i18n="control.previous"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#webs" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden" data-i18n="control.next"></span>
+      </button>
+    </div>
+
+    <h3 class="text-white text-center mb-4">Aplikacje mobilne</h3>
+    <div id="apps" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
+            <div class="col-xl-1 col-lg-1"></div>
+            <div class="col-xl-5 col-lg-5">
+              <img class="rotate img-fluid-border mb-3 mb-lg-0" src="assets/img/apps/NoPhoto.png"
+                alt="NoPhoto" />
+            </div>
+            <div class="col-xl-5 col-lg-5 d-flex flex-column">
+              <div class="featured-text text-center">
+                <h4 class="text-white" data-i18n="mobile.defaultTitle"></h4>
+                <p class="text-white-50" data-i18n="mobile.defaultDescription"></p>
+              </div>
+            </div>
+            <div class="col-xl-1 col-lg-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strzałki nawigacyjne -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#apps" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Poprzedni</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#apps" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Następny</span>
+      </button>
+    </div>
+
+    <h3 class="text-white text-center mb-4">Projekty graficzne</h3>
+    <div id="design" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
+            <div class="col-xl-1 col-lg-1"></div>
+            <div class="col-xl-5 col-lg-5">
+              <div class="ratio ratio-16x9 mb-3 mb-lg-0 d-block mx-auto" style="width:90%">
+                <iframe class="img-fluid-border d-block mx-auto" src="https://www.youtube.com/embed/-spCV1uaTNg"
+                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 d-flex flex-column">
+              <div class="featured-text text-center">
+                <h4 class="text-white">OneLife</h4>
                 <p class="text-white-50">
-                  Monwiz to pixel-artowa gra RPG stworzona w frameworku Phaser
-                  jako praca inżynierska...
+                  Projekt, nad którym spędziłam sporo czasu, głównie z powodu ręcznego stworzenia napisu
+                  oraz dodania neonowej poświaty. Napis został zaprezentowany w kilku wariantach: jako GIF
+                  na czarnym tle, plik WebP bez tła oraz ikona 128x128 w tych samych wersjach. Tworzenie
+                  napisów odbyło się w programie Krita, a całe nagranie zostało zrealizowane w DaVinci
+                  Resolve, gdzie dodano tło, w tym muzykę, odgłosy miasta oraz efekt dymu.
                 </p>
               </div>
-              <div class="text-center mt-4">
-                <a href="https://monwiz.5v.pl/" class="btn btn-primary" rel="noopener">Sprawdź tymczasową stronę</a>
+              <div class="text-center mt-4 margines">
+                <p class="text-secondary">(Kliknij w logo by powiększyć)</p>
+
+                <!-- Miniatury obrazków -->
+                <img src="assets/img/graphics/Onelife/1L.webp" alt="OneLife Logo Main" class="img-fluid"
+                  style="width: auto; height: 5rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal1L">
+
+                <img src="assets/img/graphics/Onelife/1Lmain.webp" alt="OneLife Logo" class="img-fluid"
+                  style="width: auto; height: 5rem; cursor: pointer;" data-bs-toggle="modal"
+                  data-bs-target="#modal1Lmain">
               </div>
             </div>
             <div class="col-xl-1 col-lg-1"></div>
@@ -93,158 +261,221 @@
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
             <div class="col-xl-1 col-lg-1"></div>
             <div class="col-xl-5 col-lg-5">
-              <img class="img-fluid mb-3 mb-lg-0 border rounded" src="assets/img/webs/Yups.png"
-                alt="Yups – autorski sklep internetowy" />
+              <!-- Klikalne zdjęcie -->
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-6">
+                  <img class="img-graphic-border mb-3 mb-lg-0"
+                    src="assets/img/graphics/NocSwietojanska/NocSwietojanska.png" alt="NocSwietojanska"
+                    data-bs-toggle="modal" data-bs-target="#Plakat1" />
+                </div>
+                <div class="col-xl-6 col-lg-6 col-6">
+                  <img class="img-graphic-border mb-3 mb-lg-0"
+                    src="assets/img/graphics/NocSwietojanska/NocSwietojanskaV2.png" alt="NocSwietojanska"
+                    data-bs-toggle="modal" data-bs-target="#Plakat2" />
+                </div>
+              </div>
             </div>
+
             <div class="col-xl-5 col-lg-5 d-flex flex-column">
               <div class="featured-text text-center">
-                <h4 class="text-white">Yups</h4>
+                <h4 class="text-white">Plakat "Noc Świętojańska"</h4>
                 <p class="text-white-50">
-                  Autorski sklep internetowy w Bootstrapie: logowanie,
-                  płatności tPay, zamówienia, wishlisty...
+                  Plakat został stworzony w Canvie, a sama rozmowa z klientką miała kluczowy wpływ na
+                  ostateczny wygląd projektu. Dzięki jej cennym sugestiom, plakat przeszedł kilka
+                  metamorfoz. Opracowane zostały różne warianty, a finalnie wybrany został ten, który
+                  najlepiej odpowiadał jej oczekiwaniom i wizji.
                 </p>
               </div>
-              <div class="text-center mt-4">
-                <a href="https://sklep-yups.pl" class="btn btn-primary" rel="noopener">Sprawdź stronę</a>
+              <div class="text-center mt-4 margines">
+                <p class="text-secondary">(Kliknij w plakat by powiększyć)</p>
               </div>
             </div>
             <div class="col-xl-1 col-lg-1"></div>
           </div>
         </div>
 
-        <!-- Dodaj tu kolejne slajdy (PlayHunt, Quizow, Kreator Menu) analogicznie -->
-      </div>
-
-      <!-- Strzałki -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#webs" data-bs-slide="prev"
-        aria-label="Poprzedni slajd">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#webs" data-bs-slide="next"
-        aria-label="Następny slajd">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-
-    <!-- APLIKACJE MOBILNE -->
-    <h3 class="text-white text-center my-5">Aplikacje mobilne</h3>
-    <div id="apps" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="5000">
+        <!-- Slide 3 -->
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
             <div class="col-xl-1 col-lg-1"></div>
             <div class="col-xl-5 col-lg-5">
-              <img class="img-fluid mb-3 mb-lg-0 border rounded" src="assets/img/apps/NoPhoto.png"
-                alt="Brak widoku aplikacji – w przygotowaniu" />
+              <!-- Klikalne zdjęcie -->
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-6">
+                  <img class="img-graphic-border mb-3 mb-lg-0"
+                    src="assets/img/graphics/ReklamaLatowicz/UlotkaLatowicz1.png" alt="UlotkaLatowicz"
+                    data-bs-toggle="modal" data-bs-target="#Ulotka1" />
+                </div>
+                <div class="col-xl-6 col-lg-6 col-6">
+                  <img class="img-graphic-border mb-3 mb-lg-0"
+                    src="assets/img/graphics/ReklamaLatowicz/UlotkaLatowicz2.png" alt="UlotkaLatowicz"
+                    data-bs-toggle="modal" data-bs-target="#Ulotka2" />
+                </div>
+              </div>
             </div>
             <div class="col-xl-5 col-lg-5 d-flex flex-column">
               <div class="featured-text text-center">
-                <h4 class="text-white">Brak widoku</h4>
+                <h4 class="text-white">Ulotka wyborcza</h4>
                 <p class="text-white-50">
-                  Aplikacja w trakcie edycji. Pojawi się wkrótce.
+                  Ulotka zaprojektowana w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach
+                  z klientami, ulotka została stworzona w taki sposób, aby pomieścić dużą ilość tekstu,
+                  kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i
+                  prostym designem. Ze względu na to, że każda ulotka dla kandydatów została
+                  zaprezentowana w ten sam sposób, przedstawiona jest jedna z nich.
                 </p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <p class="text-secondary">(Kliknij w obraz by powiększyć)</p>
               </div>
             </div>
             <div class="col-xl-1 col-lg-1"></div>
           </div>
         </div>
-      </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#apps" data-bs-slide="prev"
-        aria-label="Poprzedni slajd">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#apps" data-bs-slide="next"
-        aria-label="Następny slajd">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
-
-    <!-- PROJEKTY GRAFICZNE (z modalami) -->
-    <h3 class="text-white text-center my-5">Projekty graficzne</h3>
-    <div id="design" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <!-- Slide: OneLife -->
-        <div class="carousel-item active" data-bs-interval="5000">
+        <!-- Slide 4 -->
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
             <div class="col-xl-1 col-lg-1"></div>
             <div class="col-xl-5 col-lg-5">
-              <div class="ratio ratio-16x9 mb-3 mb-lg-0 d-block mx-auto" style="width: 90%">
-                <iframe class="border rounded" src="https://www.youtube.com/embed/-spCV1uaTNg"
-                  title="OneLife – animacja logo" allow="
-                      accelerometer;
-                      autoplay;
-                      encrypted-media;
-                      gyroscope;
-                      picture-in-picture;
-                      web-share;
-                    " allowfullscreen></iframe>
-              </div>
+              <!-- Klikalne zdjęcie -->
+              <img class="img-fluid-border mb-3 mb-lg-0"
+                src="assets/img/graphics/ReklamaLatowicz/BanerLatowicz.png" alt="BanerLatowicz"
+                data-bs-toggle="modal" data-bs-target="#BanerLatowicz" />
             </div>
             <div class="col-xl-5 col-lg-5 d-flex flex-column">
               <div class="featured-text text-center">
-                <h4 class="text-white">OneLife</h4>
+                <h4 class="text-white">Baner wyborczy</h4>
                 <p class="text-white-50">
-                  Logo z neonową poświatą, warianty GIF/WebP/ikona. Montaż:
-                  DaVinci Resolve.
+                  Baner zaprojektowany w Canvie dla kandydatów na radców gminy Latowicz.
                 </p>
               </div>
-              <div class="text-center mt-4">
-                <p class="text-secondary">
-                  (Kliknij miniatury, aby powiększyć)
-                </p>
-                <img src="assets/img/graphics/Onelife/1L.webp" alt="OneLife Logo Main" class="img-fluid"
-                  style="height: 5rem; cursor: pointer" data-bs-toggle="modal" data-bs-target="#modal1L" />
-                <img src="assets/img/graphics/Onelife/1Lmain.webp" alt="OneLife Logo" class="img-fluid"
-                  style="height: 5rem; cursor: pointer" data-bs-toggle="modal" data-bs-target="#modal1Lmain" />
+              <div class="text-center mt-4 margines">
+                <p class="text-secondary">(Kliknij w obraz by powiększyć)</p>
               </div>
             </div>
             <div class="col-xl-1 col-lg-1"></div>
           </div>
         </div>
 
-        <!-- Dodaj tu kolejne slajdy (Noc Świętojańska, Ulotka, Baner) analogicznie -->
+        <!-- MODALE -->
+
+        <!-- Modal dla 1L.webp -->
+        <div class="modal fade" id="modal1L" tabindex="-1" aria-labelledby="modal1LLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/Onelife/1L.webp" class="img-fluid" alt="OneLife Logo Main">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal dla 1Lmain.webp -->
+        <div class="modal fade" id="modal1Lmain" tabindex="-1" aria-labelledby="modal1LmainLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/Onelife/1Lmain.webp" class="img-fluid" alt="OneLife Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal dla Plakat1 -->
+        <div class="modal fade" id="Plakat1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/NocSwietojanska/NocSwietojanska.png" class="img-fluid"
+                  alt="NocSwietojanska" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal dla Plakat2 -->
+        <div class="modal fade" id="Plakat2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/NocSwietojanska/NocSwietojanskaV2.png" class="img-fluid"
+                  alt="NocSwietojanska" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal dla Ulotka1 -->
+        <div class="modal fade" id="Ulotka1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/ReklamaLatowicz/UlotkaLatowicz1.png" class="img-fluid"
+                  alt="UlotkaLatowicz" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal dla Ulotka2 -->
+        <div class="modal fade" id="Ulotka2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/ReklamaLatowicz/UlotkaLatowicz2.png" class="img-fluid"
+                  alt="UlotkaLatowicz" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal dla BanerLatowicz -->
+        <div class="modal fade" id="BanerLatowicz" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border-0">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="assets/img/graphics/ReklamaLatowicz/BanerLatowicz.png" class="img-fluid"
+                  alt="BanerLatowicz" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#design" data-bs-slide="prev"
-        aria-label="Poprzedni slajd">
+      <!-- Strzałki nawigacyjne -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#design" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Poprzedni</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#design" data-bs-slide="next"
-        aria-label="Następny slajd">
+      <button class="carousel-control-next" type="button" data-bs-target="#design" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Następny</span>
       </button>
     </div>
-
-    <!-- MODALE (przykłady) -->
-    <div class="modal fade" id="modal1L" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark border-0">
-          <div class="modal-header">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-              aria-label="Zamknij"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/img/graphics/Onelife/1L.webp" class="img-fluid" alt="OneLife Logo Main" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="modal1Lmain" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark border-0">
-          <div class="modal-header">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-              aria-label="Zamknij"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img src="assets/img/graphics/Onelife/1Lmain.webp" class="img-fluid" alt="OneLife Logo" />
-          </div>
-        </div>
-      </div>
     </div>
   </section>
+
 
   <!-- KONTAKT -->
   <section class="signup-section" id="contact">
@@ -258,20 +489,20 @@
           <form class="form-signup" action="https://formspree.io/f/yourFormId" method="POST">
             <div class="row input-group-newsletter">
               <div class="col-12 mb-2">
-                <label class="visually-hidden" for="question">Pytanie</label>
-                <textarea class="form-control custom-textarea" id="question" name="question"
-                  placeholder="Zadaj pytanie..." required></textarea>
+                <label class="visually-hidden" for="question" data-i18n="contact.questionLabel"></label>
+                <textarea class="form-control custom-textarea" id="question" name="question" placeholder=""
+                  data-i18n-placeholder="contact.questionPlaceholder" required></textarea>
               </div>
               <div class="col">
-                <label class="visually-hidden" for="emailAddress">E-mail</label>
-                <input class="form-control" id="emailAddress" name="_replyto" type="email" placeholder="Wpisz e-mail..."
-                  required />
+                <label class="visually-hidden" for="emailAddress" data-i18n="contact.email"></label>
+                <input class="form-control" id="emailAddress" name="_replyto" type="email" placeholder=""
+                  data-i18n-placeholder="contact.emailPlaceholder" required />
               </div>
               <div class="col-auto">
-                <button class="btn btn-primary" type="submit">Wyślij</button>
+                <button class="btn btn-primary" type="submit" data-i18n="contact.send"></button>
               </div>
             </div>
-            <input type="hidden" name="_subject" value="Wiadomość z portfolio – Jowita Kruk" />
+            <input type="hidden" name="_subject" value="Wiadomość z portfolio: Jowita Kruk" />
           </form>
         </div>
       </div>
@@ -289,8 +520,9 @@
               <h4 class="text-uppercase m-0" data-i18n="contact.address"></h4>
               <hr class="my-3 mx-auto" />
               <div class="small text-black-50">
-                <a class="text-decoration-none" href="https://maps.app.goo.gl/jem5HepJgDEMiASf7" rel="noopener" data-i18n="contact.addressDesc">
-                Dąbrowa Górnicza <br> <span data-i18n="contact.country"></span>
+                <a class="text-decoration-none" href="https://maps.app.goo.gl/jem5HepJgDEMiASf7" rel="noopener"
+                  data-i18n="contact.addressDesc">
+                  Dąbrowa Górnicza <br> <span data-i18n="contact.country"></span>
                 </a>
               </div>
             </div>
@@ -336,19 +568,20 @@
           </div>
         </div>
       </div>
-      <div class="small text-white-50 mt-4 no-select" style="text-align: center;">
-        <span data-i18n="footer.copyright"></span>
-        <span id="currentYear"></span>
-      </div>
-      <div class="small text-white-50 mb-4 no-select" style="text-align: center;" data-i18n="footer.copyright2"></div>
-      <!-- row -->
-    </div>
-    <!-- container -->
   </section>
+
+  <footer class="footer bg-black py-4">
+    <div class="small text-white-50 no-select" style="text-align: center;">
+      <span data-i18n="footer.copyright"></span>
+      <span id="currentYear"></span>
+    </div>
+    <div class="small text-white-50 no-select" style="text-align: center;" data-i18n="footer.copyright2"></div>
+    </div>
+  </footer>
 
   <!-- JS (Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/mainView.js"></script>

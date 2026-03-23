@@ -40,7 +40,7 @@
     "web": {
       "title": "Strony internetowe",
 
-      "monwizTitle": "Monwiz: gra MMORPG",
+      "monwizTitle": "Monwiz: gra RPG",
       "monwizDescription": "Monwiz to pixel-artowa gra RPG stworzona w frameworku Phaser jako moja praca inżynierska. Gracz wciela się w poszukiwacza przygód, eksplorując tajemniczy świat fantasy pełen wyzwań. W trakcie podróży spotyka NPC-ów, którzy mogą zlecać zadania zależne od jego poziomu, oraz stawia czoła licznym wyzwaniom i walkom.",
       "monwizButton": "Sprawdź tymczasową stronę",
 
@@ -57,7 +57,7 @@
       "quizowButton": "W trakcie przenoszenia",
 
       "menuTitle": "Menu restauracji",
-      "menuDescription": "Projekt ten został stworzony przeze mnie w ciągu dwóch dni i ma na celu ułatwienie właścicielom  restauracji w grze GTA RP tworzenie własnego menu bez konieczności ingerencji w kod. Całość oparta  jest na jednym pliku HTML, co sprawia, że osoby niezaznajomione z programowaniem mogą z łatwością uruchomić  kreator, a właściciele serwerów nie muszą martwić się o dodatkowe hostowanie. <br>Kreator umożliwia dodawanie, edytowanie oraz usuwanie kategorii, dań, napojów i ich cen. Dodatkowo pozwala na generowanie gotowego kodu do wklejenia w plikach gry. Dla większej wygody i bezpieczeństwa przewidziano również lokalne zapisywanie postępu, co chroni przed utratą danych w przypadku przypadkowego zamknięcia kreatora.",
+      "menuDescription": "Projekt ten został stworzony przeze mnie w ciągu dwóch dni i ma na celu ułatwienie właścicielom restauracji w grze GTA RP tworzenie własnego menu bez konieczności ingerencji w kod. Całość oparta jest na jednym pliku HTML, co sprawia, że osoby niezaznajomione z programowaniem mogą z łatwością uruchomić  kreator, a właściciele serwerów nie muszą martwić się o dodatkowe hostowanie. \nKreator umożliwia dodawanie, edytowanie oraz usuwanie kategorii, dań, napojów i ich cen. Dodatkowo pozwala na generowanie gotowego kodu do wklejenia w plikach gry. Dla większej wygody i bezpieczeństwa przewidziano również lokalne zapisywanie postępu, co chroni przed utratą danych w przypadku przypadkowego zamknięcia kreatora.",
       "menuButton": "Pobierz kreator"
     }
   },
