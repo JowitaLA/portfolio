@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kreator Craftingu</title>
+  <link rel="icon" href="https://i.ibb.co/60sqfrY5/Logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    textarea,
+    pre {
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+
+    .ingredient-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 0;
+    }
+
+    .crafting-item {
+      background: rgb(0, 0, 0, 0.7);
+      border: 1px solid #000000;
+      border-radius: 16px;
+      color: white;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .bg {
+      background: rgb(0, 0, 0, 0.7);
+      border-radius: 16px;
+      padding: 2rem;
+      color: white;
+    }
+
+    body {
+      background-image: url('https://i.ibb.co/fdxpm6tG/Store.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+  </style>
+  <!-- Bootstrap Icons CDN for upload/download icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-8 bg my-4">
+        <div class="container position-relative">
+          <header class="d-flex align-items-center py-3 m-2 position-relative">
+            <h1 class="position-absolute top-50 start-50 translate-middle mb-0" style="font-size: 2rem; color: #9be7ec; text-shadow:
+              0 0 10px #518da5,
+              0 0 20px #518da5,
+              0 0 40px #518da5,
+              0 0 80px #518da5,
+              0 0 10px #ffff,
+              0 0 40px #518da5,
+              0 0 80px #518da5;">
+              Witaj w Kreatorze Menu!
+            </h1>
+          </header>
+          <p class="text-center">
+            Nie masz czasu na zrobienie całego menu? Pobierz plik .txt z menu i wczytaj go ponownie, aby kontynuować
+            swoją pracę.<br>
+            Gdy będziesz gotowy, pobierz swoje menu w formacie <code style="color:#42b5bd">.txt</code> i
+            wyślij do <strong style="color:#42b5bd">Opiekuna Biznesów</strong>.<br>
+            <strong style="color:#42b5bd">Uwaga!</strong> Strona ma być tylko ułatwieniem, każdy kod jest
+            skrupulatnie sprawdzany przez administrację.<br>
+            Próba ingerencji w kod może skończyć się <strong style="color:#42b5bd">banem</strong> a nawet
+            decyzją o <strong style="color:#42b5bd">anulowaniu biznesu</strong>.
+          </p>
+          <div class="row mt-4 mb-4 justify-content-center align-items-center">
+            <div class="col-md-12 d-flex flex-column align-items-center">
+              <div class="d-flex flex-row gap-3">
+                <label class="btn btn-primary px-4 py-2 shadow mb-0" style="cursor:pointer;">
+                  <i class="bi bi-upload me-2"></i>Wczytaj menu .txt
+                  <input type="file" accept=".txt" onchange="loadCraftingFile(event)" style="display:none;">
+                </label>
+                <button class="btn btn-secondary px-4 py-2 shadow" onclick="downloadMenu()">
+                  <i class="bi bi-download me-2"></i>Pobierz menu .txt
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="mt-4 mb-4">
+          <h4 class="text-center mb-2">Wybierz składnik:</h4>
+          <div id="ingredientOptions" class="d-flex flex-wrap gap-3 mt-2"></div>
+        </div>
+
+        <hr>
+        <div class="d-flex flex-column align-items-center text-center justify-content-start">
+          <a href="https://discord.gg/JPEexUZX9t">
+            <img src="https://i.ibb.co/VY2sxRhS/1-Lmain-1.webp" alt="Logo" height="100" style="display: block;">
+          </a>
+          <p class="text-center" style="width: 100%; color: #9be7ec; text-shadow:
+              0 0 10px #518da5,
+              0 0 20px #518da5,
+              0 0 40px #518da5,
+              0 0 80px #518da5,
+              0 0 10px #ffff,
+              0 0 40px #518da5,
+              0 0 80px #518da5;
+              font-size: 1.2rem;">
+            &copy; 2025
+          </p>
+        </div>
+      </div>
+
+      <div class="col-4 my-4 position-sticky" style="top: 0.5rem;">
+        <div class="position-sticky" style="top: 0.5rem;">
+          <div class="bg">
+            <div>
+              <h4 class="text-center" style=" color: #9be7ec; text-shadow:
+              0 0 10px #518da5,
+              0 0 20px #518da5,
+              0 0 40px #518da5,
+              0 0 80px #518da5,
+              0 0 10px #ffff,
+              0 0 40px #518da5,
+              0 0 80px #518da5;">
+                Przepis</h4>
+
+              <hr>
+              <div class="text-center" id="ingredientList">Brak składników</div>
+
+              <div class="mb-3 mt-4 mb-2">
+                <div>
+                  <label class="mb-2" for="dishResult">Nazwa pozycji</label>
+                  <input id="dishResult" class="form-control bg-dark text-white border-dark"
+                    placeholder="Wpisz nazwę potrawy lub napoju" type="text"
+                    oninput="this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, '').replace(/\s+/g, ' ').trim()">
+                </div>
+                <div class="mt-3">
+                  <label class="mb-2" for="timeSelect">Rodzaj pozycji</label>
+                  <select id="timeSelect" class="form-select bg-dark text-white border-dark">
+                    <option value="" disabled selected>Wybierz rodzaj pozycji</option>
+                    <option value="10000" data-icon="fas fa-burger">Potrawa</option>
+                    <option value="5000" data-icon="fas fa-wine-glass-alt">Napój</option>
+                    <option value="7000" data-icon="fas fa-ice-cream">Przysmak</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn btn-success d-block mx-auto mt-4" onclick="addCraft()"><i
+                  class="bi bi-calendar-check"></i> &nbsp; Zapisz pozycje</button>
+            </div>
+          </div>
+          <div class="bg mt-2">
+            <div>
+              <h4 class="text-center" style=" color: #9be7ec; text-shadow:
+              0 0 10px #518da5,
+              0 0 20px #518da5,
+              0 0 40px #518da5,
+              0 0 80px #518da5,
+              0 0 10px #ffff,
+              0 0 40px #518da5,
+              0 0 80px #518da5;">
+                Menu</h4>
+              <hr>
+              <div id="craftingMenu">
+                <p class="text-center">Brak pozycji w menu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function saveProgress() {
+        const dishName = document.getElementById('dishResult').value;
+        const timeSelect = document.getElementById('timeSelect').value;
+
+        const data = {
+          ingredients,
+          craftings,
+          dishName,
+          timeSelect
+        };
+
+        localStorage.setItem('craftingProgress', JSON.stringify(data));
+      }
+
+      function loadProgress() {
+        const data = JSON.parse(localStorage.getItem('craftingProgress'));
+        if (!data) return;
+        console.log("Załadowano dane:", data);
+
+        ingredients = data.ingredients || [];
+        craftings = data.craftings || [];
+
+        document.getElementById('dishResult').value = data.dishName || '';
+        document.getElementById('timeSelect').value = data.timeSelect || '';
+
+        renderIngredients();
+        renderMenu();
+      }
+
+      window.addEventListener('DOMContentLoaded', loadProgress);
+
+      let ingredients = [];
+      let craftings = [];
+
+      const allIngredients = [
+        { name: "maka", label: "Mąka", img: "https://i.ibb.co/JRYXdybV/Maka.png" },
+        { name: "oliwa", label: "Oliwa", img: "https://i.ibb.co/6cZrJM2m/Oliwa.png" },
+        { name: "drozdze", label: "Drożdże", img: "https://i.ibb.co/jZzyD2BG/Drozdze.png" },
+        { name: "szynka", label: "Szynka", img: "https://i.ibb.co/rR8Vfntv/Szynka.png" },
+        { name: "salami", label: "Salami", img: "https://i.ibb.co/7tQkqm4K/Salami.png" },
+        { name: "mielone", label: "Mięso mielone", img: "https://i.ibb.co/rRN6h9n3/Mielone.png" },
+        { name: "pomidor", label: "Pomidor", img: "https://i.ibb.co/WWfKCQBm/Pomidor.png" },
+        { name: "ser", label: "Ser", img: "https://i.ibb.co/JjyTBbZP/Ser.png" },
+        { name: "oliwka", label: "Oliwka", img: "https://i.ibb.co/2Dvcgrh/Oliwka.png" },
+        { name: "pieczarka", label: "Pieczarka", img: "https://i.ibb.co/6RGMxnbV/Pieczarka.png" },
+        { name: "pomidorypuszka", label: "Pomidory w puszce", img: "https://i.ibb.co/SDx0CzyL/Pomidory-puszka.png" },
+        { name: "oregano", label: "Oregano", img: "https://i.ibb.co/DfrHr7L2/Oregano.png" },
+        { name: "bazylia", label: "Bazylia", img: "https://i.ibb.co/39XZptYb/Bazylia.png" },
+        { name: "salata", label: "Sałata", img: "https://i.ibb.co/chB5V4V5/Salata.png" },
+        { name: "miesokurczak", label: "Kurczak", img: "https://i.ibb.co/4n0F6MST/Mieso-kurczak.png" },
+        { name: "kalamarnica", label: "Kałamarnica", img: "https://i.ibb.co/CKM3ypgr/Kalamarnica.png" },
+        { name: "biszkopt", label: "Ciasto biszkoptowe", img: "https://i.ibb.co/KzNVBz7g/Biszkopt.png" },
+        { name: "mascarpone", label: "Serek mascarpone", img: "https://i.ibb.co/tN8M8BG/Mascarpone.png" },
+        { name: "cukier", label: "Cukier", img: "https://i.ibb.co/xt35PFQw/Cukier.png" },
+        { name: "jajko", label: "Jajko", img: "https://i.ibb.co/ccR8yTcS/Jajko.png" },
+        { name: "kakao", label: "Kakao", img: "https://i.ibb.co/Fb5n9TQr/Kakao.png" },
+        { name: "czekolada", label: "Czekolada", img: "https://i.ibb.co/VpwqBL2Q/Czekolada.png" },
+        { name: "wanilia", label: "Wanilia", img: "https://i.ibb.co/8DM2V2R9/Wanilia.png" },
+        { name: "mleko", label: "Mleko", img: "https://i.ibb.co/kVNMYjK5/Mleko.png" },
+        { name: "jablko", label: "Jabłko", img: "https://i.ibb.co/xKzDms2J/Jab-ko.png" },
+        { name: "kiwi", label: "Kiwi", img: "https://i.ibb.co/W4RMr8dv/Kiwi.png" },
+        { name: "gruszka", label: "Gruszka", img: "https://i.ibb.co/w31hDm1/Gruszka.png" },
+        { name: "banan", label: "Banan", img: "https://i.ibb.co/GQK8M1y0/Banan.png" },
+        { name: "pomarancz", label: "Pomarańcz", img: "https://i.ibb.co/jPQmG93J/Pomarancz.png" },
+        { name: "wodka", label: "Wódka", img: "https://i.ibb.co/zh2NBYjv/Wodka.png" },
+        { name: "cola", label: "Cola", img: "https://i.ibb.co/p6m1w28d/Cola.png" },
+        { name: "chilli", label: "Chilli", img: "https://i.ibb.co/23X3wpy3/Chilli.png" },
+        { name: "boczek", label: "Boczek", img: "https://i.ibb.co/ZpqcK9MZ/Boczek.png" },
+        { name: "pieprz", label: "Pieprz", img: "https://i.ibb.co/PGrSqbDt/Pieprz.png" },
+        { name: "meat2", label: "Mięso", img: "https://i.ibb.co/rRWzbFrW/Meat-1.png" },
+      ];
+
+      function renderIngredientOptions() {
+        const container = document.getElementById('ingredientOptions');
+        container.innerHTML = '';
+        allIngredients.forEach(ing => {
+          const div = document.createElement('div');
+          div.style.width = '88px';
+          div.style.cursor = 'pointer';
+          div.className = 'text-center';
+          div.innerHTML = `
+          <img src="${ing.img}" alt="${ing.label}" style="width: 100%; transform: scale(0.8); transform-origin: center; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(0.8)'">
+          <br>
+          <small>${ing.label}</small>
+        `;
+          div.onclick = () => {
+            ingredients.push({ name: ing.name, label: ing.label, amount: 1 });
+            renderIngredients();
+            saveProgress();
+          };
+          container.appendChild(div);
+        });
+      }
+
+      function addIngredient() {
+        const sel = document.getElementById('ingredientSelect');
+        const name = sel.value;
+        ingredients.push({ name, label, amount: 1 });
+        renderIngredients();
+        saveProgress();
+      }
+
+      function renderIngredients() {
+        const container = document.getElementById('ingredientList');
+        container.innerHTML = '';
+        if (ingredients.length === 0) {
+          container.textContent = 'Brak składników';
+          saveProgress();
+          return;
+        }
+        ingredients.forEach((ing, i) => {
+          const info = allIngredients.find(a => a.name === ing.name) || {};
+          const label = info.label || ing.name;
+          const img = info.img || '';
+
+          const row = document.createElement('div');
+          row.className = 'ingredient-item';
+          row.innerHTML = `
+      <img src="${img}" alt="${label}" style="width: 30px; height: 30px;">
+      <span>${label}</span>
+      <div>
+        <button class="btn btn-sm btn-outline-secondary" onclick="changeAmount(${i}, -1)">-</button>
+        <span class="mx-2">${ing.amount}</span>
+        <button class="btn btn-sm btn-outline-secondary" onclick="changeAmount(${i}, 1)">+</button>
+        <button class="btn btn-sm btn-outline-danger ms-2" onclick="removeIngredient(${i})"><i class="bi bi-trash3-fill"></i></button>
+      </div>
+    `;
+          container.appendChild(row);
+        });
+        saveProgress();
+      }
+
+      function changeAmount(index, delta) {
+        ingredients[index].amount = Math.max(1, ingredients[index].amount + delta);
+        renderIngredients();
+        saveProgress();
+      }
+
+      function removeIngredient(index) {
+        ingredients.splice(index, 1);
+        renderIngredients();
+        saveProgress();
+      }
+
+      function addCraft() {
+        const result = document.getElementById('dishResult').value.trim().toLowerCase();
+        if (!result || ingredients.length === 0) return alert("Uzupełnij nazwę i składniki.");
+        const label = `Zrób ${capitalize(result)}`;
+        const progressLabel = `Robienie ${capitalize(result)}`;
+        const timeSelect = document.getElementById('timeSelect');
+        const time = timeSelect.value;
+        const icon = timeSelect.options[timeSelect.selectedIndex].getAttribute('data-icon');
+        const resultName = result.replace(/\s+/g, '-');
+
+        const formattedIngredients = ingredients.map(i => `                { name = '${i.name}', amount = ${i.amount} }`).join(',\n');
+
+        const lua = `{
+          coords = vec4(0, 0, 0, 0),
+          size = vec3(1.0, 1.0, 1.0),
+          options = {
+              {
+                  icon = '${icon}',
+                  label = '${label}',
+                  ingredients = {
+                    ${formattedIngredients}
+                  },
+                  results = {
+                      { name = '${resultName}', amount = 1 }
+                  },
+                  time = ${time},
+                  progressLabel = '${progressLabel}',
+                  animation = {
+                      dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@',
+                      clip = 'machinic_loop_mechandplayer'
+                  }
+              }
+          }
+      }`;
+        craftings.push(lua);
+        renderMenu();
+        ingredients = [];
+        renderIngredients();
+        document.getElementById('dishResult').value = '';
+        saveProgress();
+      }
+
+      function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+      function downloadMenu() {
+        const fullText = "craftings = {\n" + craftings.join(",\n\n") + "\n}";
+        const blob = new Blob([fullText], { type: 'text/plain' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = "menu.txt";
+        a.click();
+      }
+
+      function renderMenu() {
+        const container = document.getElementById('craftingMenu');
+        container.innerHTML = '';
+
+        if (craftings.length === 0) {
+          container.innerHTML = '<p class="text-center">Brak pozycji w menu</p>';
+          saveProgress();
+          return;
+        }
+
+        craftings.forEach((luaStr, i) => {
+          // 1. Wyciągnij name z options.results
+          const resMatch = luaStr.match(/results\s*=\s*\{\s*\{\s*name\s*=\s*'([^']+)'/);
+          const rawName = resMatch ? resMatch[1] : 'Brak nazwy';
+          const displayName = rawName.charAt(0).toUpperCase() + rawName.slice(1);
+
+          // 2. Wyciągnij blok ingredients = { ... }
+          const ingBlockMatch = luaStr.match(/ingredients\s*=\s*\{([\s\S]*?)\}/);
+          const ingBlockRaw = ingBlockMatch
+            ? 'ingredients = {' + ingBlockMatch[1] + '}'
+            : 'ingredients = {}';
+
+          // 3. Wyciągnij pary name + amount dla listy
+          const ingPairs = [...luaStr.matchAll(/name\s*=\s*'([^']+)'[,\s]*amount\s*=\s*(\d+)/g)]
+            // filtrowanie tylko tych wewnątrz ingredients
+            .filter((m, idx, arr) => {
+              // prosty sposób: bierzemy pierwsze N-1 wystąpień (ostatnie to w results)
+              return idx < arr.length - 1;
+            })
+            .map(m => ({ name: m[1], amount: m[2] }));
+
+          // Budujemy element
+          const item = document.createElement('div');
+          item.className = 'p-1 mb-1';
+
+          // Nagłówek: nazwa
+          const title = document.createElement('div');
+          // Wyciągnij typ pozycji na podstawie time
+          const typeMatch = luaStr.match(/time\s*=\s*(\d+)/);
+          let typeLabel = 'Nieznany typ';
+          if (typeMatch) {
+            if (typeMatch[1] === '10000') typeLabel = 'Potrawa';
+            else if (typeMatch[1] === '5000') typeLabel = 'Napój';
+            else if (typeMatch[1] === '7000') typeLabel = 'Przysmak';
+          }
+          title.innerHTML = `<strong>${displayName} <i>(${typeLabel})</i></strong>`;
+          item.appendChild(title);
+
+          // Lista składników
+          const ul = document.createElement('ul');
+          ul.className = 'ps-3';
+          ingPairs.forEach(ing => {
+            // znajdź label, jeśli masz allIngredients
+            const info = allIngredients.find(a => a.name === ing.name);
+            const label = info ? info.label : ing.name;
+            ul.innerHTML += `<li>${ing.amount}× ${label}</li>`;
+            if (ul.innerHTML === '') {
+              ul.innerHTML = '<li>Brak składników</li>';
+            }
+          });
+          item.appendChild(ul);
+
+          const btnGroup = document.createElement('div');
+          btnGroup.className = 'text-center';
+          btnGroup.innerHTML = `
+            <button class="btn btn-sm" style="background-color: #E67E22; color: #fff; border: none; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#c96a17'" onmouseout="this.style.backgroundColor='#E67E22'" onclick="editCraft(${i})"><i class="bi bi-patch-question"></i>&nbsp Edytuj</button>
+            <button class="btn btn-sm btn-danger" onclick="deleteCraft(${i})"><i class="bi bi-patch-minus"></i>&nbsp Usuń</button>
+            <hr>
+          `;
+          item.appendChild(btnGroup);
+
+          container.appendChild(item);
+        });
+        saveProgress();
+      }
+
+      function deleteCraft(index) {
+        if (confirm('Na pewno usunąć tę potrawę?')) {
+          craftings.splice(index, 1);
+          renderMenu();
+          saveProgress();
+        }
+      }
+
+      function editCraft(index) {
+        const lua = craftings[index];
+        const resultMatch = lua.match(/label = 'Zrób ([^']+)'/);
+        const ingredientsMatch = [...lua.matchAll(/name = '([^']+)', amount = (\d+)/g)];
+        const timeMatch = lua.match(/time = (\d+)/);
+        const iconMatch = lua.match(/icon = '([^']+)'/);
+
+        if (!resultMatch || !ingredientsMatch || !timeMatch || !iconMatch) {
+          alert('Nie można sparsować craftingu do edycji.');
+          return;
+        }
+
+        const resultName = resultMatch[1].toLowerCase();
+        document.getElementById('dishResult').value = resultName;
+
+        ingredients = ingredientsMatch.slice(0, -1).map(m => {
+          const name = m[1];
+          const amount = parseInt(m[2]);
+          const info = allIngredients.find(a => a.name === name) || {};
+          return { name, amount, label: info.label || name };
+        });
+        renderIngredients();
+
+        const timeValue = timeMatch[1];
+        const select = document.getElementById('timeSelect');
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === timeValue) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+
+        craftings.splice(index, 1);
+        renderMenu();
+        saveProgress();
+      }
+
+      function loadCraftingFile(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          const content = e.target.result;
+          const body = content.replace(/^craftings\s*=\s*\{/, '').replace(/\}\s*$/, '').trim();
+
+          let blocks = [];
+          let braceCount = 0;
+          let current = '';
+          for (let i = 0; i < body.length; i++) {
+            const char = body[i];
+            current += char;
+
+            if (char === '{') braceCount++;
+            else if (char === '}') braceCount--;
+
+            // Jeśli wróciliśmy do 0 — mamy cały obiekt
+            if (braceCount === 0) {
+              const trimmed = current.trim();
+              if (trimmed && trimmed !== ',') {
+                blocks.push(trimmed);
+              }
+              current = '';
+            }
+          }
+
+          craftings = blocks;
+          renderMenu();
+          saveProgress();
+        };
+        reader.readAsText(file);
+      }
+
+      renderIngredientOptions();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
