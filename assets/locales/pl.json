@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title":"Portfolio: Jowita Kruk",
+    "title": "Portfolio: Jowita Kruk",
     "description": "Portfolio: projektowanie stron, grafik, modeli AI, aplikacje web i mobilne."
   },
 
@@ -15,7 +15,7 @@
     "p1": "Od najmłodszych lat pasjonuję się informatyką i nowymi technologiami. Moja przygoda z komputerami zaczęła się od wspólnego grania z rodzeństwem, jednak prawdziwa fascynacja rozpoczęła się w dniu moich 16 urodzin, kiedy otrzymałam pieniądze na swój pierwszy komputer. Z pomocą kuzyna dobrałam odpowiednie podzespoły, a następnie samodzielnie go złożyłam i skonfigurowałam, co miało duży wpływ na moje zainteresowanie technologią.",
     "p2": "Kilka lat później, chcąc ulepszyć wspólną rozgrywkę w Minecraft, zaczęłam uczyć się JavaScriptu, by tworzyć i edytować pluginy. Z czasem to właśnie programowanie stało się moją pasją, a dalsza edukacja tylko ją pogłębiła. W liceum, na rozszerzonej informatyce, zaczęłam naukę języka C++, co okazało się niezwykle pomocne na studiach informatycznych. Tam miałam okazję pracować z różnymi językami programowania, będąc często na poziomie osób z technikum, mających do czynienia z nimi wcześniej. Największą satysfakcję sprawiało mi jednak tworzenie stron internetowych sprawiając, że poszłam na kierunek z tym związany.",
     "p3": "Jestem osobą kreatywną, otwartą na rozwój i nowe wyzwania, co również towarzyszyło mi od najmłodszych lat. Technologia nieustannie się zmienia, dlatego chętnie poszerzam swoje umiejętności, w tym również uczę się coraz to popularniejszych frameworków. Mam doświadczenie w zarządzaniu projektami oraz organizacji pracy, przez co efektywniej realizuję powierzone mi zadania.",
-  
+
     "cvTitle": "Moje CV",
     "cvDescription": "(Kliknij w CV by powiększyć)",
     "cvButton": "Pobierz w formacie PDF",
@@ -60,34 +60,40 @@
       "menuTitle": "Menu restauracji",
       "menuDescription": "Projekt ten został stworzony przeze mnie w ciągu dwóch dni i ma na celu ułatwienie właścicielom restauracji w grze GTA RP tworzenie własnego menu bez konieczności ingerencji w kod. Całość oparta jest na jednym pliku HTML, co sprawia, że osoby niezaznajomione z programowaniem mogą z łatwością uruchomić  kreator, a właściciele serwerów nie muszą martwić się o dodatkowe hostowanie. \nKreator umożliwia dodawanie, edytowanie oraz usuwanie kategorii, dań, napojów i ich cen. Dodatkowo pozwala na generowanie gotowego kodu do wklejenia w plikach gry. Dla większej wygody i bezpieczeństwa przewidziano również lokalne zapisywanie postępu, co chroni przed utratą danych w przypadku przypadkowego zamknięcia kreatora.",
       "menuButton": "Pobierz kreator"
+    },
+
+    "mobile": {
+      "title": "Aplikacje mobilne",
+
+      "defaultTitle": "Brak widoku",
+      "defaultDescription": "Nie ma jeszcze żadnych projektów w tej kategorii."
+    },
+    "graphics": {
+      "title": "Projekty graficzne",
+
+      "onelifeTitle": "OneLife",
+      "onelifeDescription": "Projekt, nad którym spędziłam sporo czasu, głównie z powodu ręcznego stworzenia napisu oraz dodania neonowej poświaty. Napis został zaprezentowany w kilku wariantach: jako GIF na czarnym tle, plik WebP bez tła oraz ikona 128x128 w tych samych wersjach. Tworzenie napisów odbyło się w programie Krita, a całe nagranie zostało zrealizowane w DaVinci Resolve, gdzie dodano tło, w tym muzykę, odgłosy miasta oraz efekt dymu.",
+      "onelifeInfo": "(Kliknij miniatury, aby powiększyć)",
+
+      "nocSwietojanskaTitle": "Plakat ''Noc Świętojańska''",
+      "nocSwietojanskaDescription": "Plakat został stworzony w Canvie, a sama rozmowa z klientką miała kluczowy wpływ na ostateczny wygląd projektu. Dzięki jej cennym sugestiom, plakat przeszedł kilka metamorfoz. Opracowane zostały różne warianty, a finalnie wybrany został ten, który najlepiej odpowiadał jej oczekiwaniom i wizji.",
+      "nocSwietojanskaInfo": "(Kliknij w plakat by powiększyć)",
+
+      "ulotkaLatowiczTitle": "Ulotka wyborcza",
+      "ulotkaLatowiczDescription": "Ulotka zaprojektowana w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach z klientami, ulotka została stworzona w taki sposób, aby pomieścić dużą ilość tekstu, kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i prostym designem. Ze względu na to, że każda ulotka dla kandydatów została zaprezentowana w ten sam sposób, przedstawiona jest jedna z nich.",
+      "ulotkaLatowiczInfo": "(Kliknij w ulotkę by powiększyć)",
+
+      "banerLatowiczTitle": "Baner wyborczy",
+      "banerLatowiczDescription": "Baner zaprojektowany w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach z klientami, baner został stworzony w taki sposób, aby kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i prostym designem. Ze względu na to, że każdy baner dla kandydatów został zaprezentowany w ten sam sposób, przedstawiony jest jeden z nich.",
+      "banerLatowiczInfo": "(Kliknij w baner by powiększyć)"
+    },
+
+    "ai": {
+      "title": "Sieci neuronowe",
+
+      "defaultTitle": "Brak widoku",
+      "defaultDescription": "Nie ma jeszcze żadnych projektów w tej kategorii."
     }
-  },
-
-  "mobile": {
-    "title": "Aplikacje mobilne",
-
-    "defaultTitle": "Brak widoku",
-    "defaultDescription": "Nie ma jeszcze żadnych projektów w tej kategorii." 
-  },
-
-  "graphics": {
-    "title": "Projekty graficzne",
-
-    "onelifeTitle": "OneLife",
-    "onelifeDescription": "Projekt, nad którym spędziłam sporo czasu, głównie z powodu ręcznego stworzenia napisu oraz dodania neonowej poświaty. Napis został zaprezentowany w kilku wariantach: jako GIF na czarnym tle, plik WebP bez tła oraz ikona 128x128 w tych samych wersjach. Tworzenie napisów odbyło się w programie Krita, a całe nagranie zostało zrealizowane w DaVinci Resolve, gdzie dodano tło, w tym muzykę, odgłosy miasta oraz efekt dymu.",
-    "onelifeInfo": "(Kliknij miniatury, aby powiększyć)",
-
-    "nocSwietojanskaTitle": "Plakat ''Noc Świętojańska''",
-    "nocSwietojanskaDescription": "Plakat został stworzony w Canvie, a sama rozmowa z klientką miała kluczowy wpływ na ostateczny wygląd projektu. Dzięki jej cennym sugestiom, plakat przeszedł kilka metamorfoz. Opracowane zostały różne warianty, a finalnie wybrany został ten, który najlepiej odpowiadał jej oczekiwaniom i wizji.",
-    "nocSwietojanskaInfo": "(Kliknij w plakat by powiększyć)",
-
-    "ulotkaLatowiczTitle": "Ulotka wyborcza",
-    "ulotkaLatowiczDescription": "Ulotka zaprojektowana w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach z klientami, ulotka została stworzona w taki sposób, aby pomieścić dużą ilość tekstu, kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i prostym designem. Ze względu na to, że każda ulotka dla kandydatów została zaprezentowana w ten sam sposób, przedstawiona jest jedna z nich.",
-    "ulotkaLatowiczInfo": "(Kliknij w ulotkę by powiększyć)",
-
-    "banerLatowiczTitle": "Baner wyborczy",
-    "banerLatowiczDescription": "Baner zaprojektowany w Canvie dla kandydatów na radców gminy Latowicz. Po konsultacjach z klientami, baner został stworzony w taki sposób, aby kolorystycznie pasować do wizerunku kandydatów oraz charakteryzować się nowoczesnym i prostym designem. Ze względu na to, że każdy baner dla kandydatów został zaprezentowany w ten sam sposób, przedstawiony jest jeden z nich.",
-    "banerLatowiczInfo": "(Kliknij w baner by powiększyć)"
   },
 
   "controls": {
@@ -114,6 +120,5 @@
   "footer": {
     "copyright": "Copyright © Jowita Kruk ",
     "copyright2": "Wszelkie prawa zastrzeżone."
-
   }
 }
