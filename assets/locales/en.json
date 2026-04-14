@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title":"Portfolio: Jowita Raven"
+    "title": "Portfolio: Jowita Raven"
   },
 
   "header": {
@@ -14,7 +14,7 @@
     "p1": "Since I was a child, I have been passionate about computer science and new technologies. My journey with computers started with playing games together with my family, but my true fascination began on the day of my 16th birthday, when I received money for my first computer. With the help of my cousin, I selected the right components, and then assembled and configured it myself, which had a significant impact on my interest in technology.",
     "p2": "A few years later, wanting to improve our shared Minecraft gameplay, I started learning JavaScript to create and edit plugins. Over time, programming became my passion, and further education only deepened it. In high school, studying computer science at an advanced level, I began learning the C++ language, which proved to be extremely helpful during my university studies in computer science. There, I had the opportunity to work with various programming languages, often at a level comparable to those from vocational schools who had been dealing with them before. The greatest satisfaction came from creating websites, which led me to choose this field of study.",
     "p3": "I am a creative person, open to development and new challenges, which has also been a constant in my life since childhood. Technology is constantly evolving, so I eagerly expand my skills, including learning increasingly popular frameworks. I have experience in project management and work organization, which allows me to more effectively implement assigned tasks.",
-  
+
     "button": "See more",
 
     "cvTitle": "My CV",
@@ -61,34 +61,40 @@
       "menuTitle": "Menu restaurant",
       "menuDescription": "This project was created by me within two days and aims to facilitate restaurant owners in GTA RP in creating their own menu without the need for code intervention. The entire project is based on a single HTML file, making it easy for those unfamiliar with programming to run the creator, while server owners don't have to worry about additional hosting. <br>The creator allows adding, editing, and deleting categories, dishes, drinks, and their prices. Additionally, it enables generating ready-to-use code for insertion into game files. For greater convenience and security, local saving of progress is also provided, protecting against data loss in case of accidental closure of the creator.",
       "menuButton": "Download creator"
+    },
+    "mobile": {
+      "title": "Mobile applications",
+
+      "defaultTitle": "No view",
+      "defaultDescription": "There are no projects in this category yet."
+    },
+
+    "graphics": {
+      "title": "Graphic projects",
+
+      "onelifeTitle": "OneLife",
+      "onelifeDescription": "Project I spent a lot of time on, mainly due to the manual creation of the text and the addition of a neon glow. The text was presented in several variants: as a GIF on a black background, a WebP file without a background, and a 128x128 icon in the same versions. The creation of the text was done in the program Krita, and the entire recording was realized in DaVinci Resolve, where the background, including music, city sounds, and smoke effect, was added.",
+      "onelifeInfo": "(Click on the thumbnails to enlarge)",
+
+      "nocSwietojanskaTitle": "Poster ''Noc Świętojańska''",
+      "nocSwietojanskaDescription": "Poster was created in Canva, and the conversation with the client had a key impact on the final appearance of the project. Thanks to her valuable suggestions, the poster went through several metamorphoses. Different variants were developed, and finally, the one that best matched her expectations and vision was chosen.",
+      "nocSwietojanskaInfo": "(Click on the poster to enlarge)",
+
+      "ulotkaLatowiczTitle": "Election Flyer",
+      "ulotkaLatowiczDescription": "Flyer designed in Canva for candidates for the city council of Latowicz. After consultations with clients, the flyer was created in a way that would accommodate a large amount of text, match the candidates' image, and feature a modern and simple design. Due to the fact that each flyer for candidates was presented in the same way, one of them is shown.",
+      "ulotkaLatowiczInfo": "(Click on the flyer to enlarge)",
+
+      "banerLatowiczTitle": "Election Banner",
+      "banerLatowiczDescription": "Banner designed in Canva for candidates for the city council of Latowicz. After consultations with clients, the banner was created in a way that would accommodate a large amount of text, match the candidates' image, and feature a modern and simple design. Due to the fact that each banner for candidates was presented in the same way, one of them is shown.",
+      "banerLatowiczInfo": "(Click on the banner to enlarge)"
+    },
+
+    "ai": {
+      "title": "Neural networks",
+
+      "defaultTitle": "No view",
+      "defaultDescription": "There are no projects in this category yet."
     }
-  },
-
-  "mobile": {
-    "title": "Mobile applications",
-
-    "defaultTitle": "No view",
-    "defaultDescription": "There are no projects in this category yet." 
-  },
-
-  "graphics": {
-    "title": "Graphic projects",
-
-    "onelifeTitle": "OneLife",
-    "onelifeDescription": "Project I spent a lot of time on, mainly due to the manual creation of the text and the addition of a neon glow. The text was presented in several variants: as a GIF on a black background, a WebP file without a background, and a 128x128 icon in the same versions. The creation of the text was done in the program Krita, and the entire recording was realized in DaVinci Resolve, where the background, including music, city sounds, and smoke effect, was added.",
-    "onelifeInfo": "(Click on the thumbnails to enlarge)",
-
-    "nocSwietojanskaTitle": "Poster ''Noc Świętojańska''",
-    "nocSwietojanskaDescription": "Poster was created in Canva, and the conversation with the client had a key impact on the final appearance of the project. Thanks to her valuable suggestions, the poster went through several metamorphoses. Different variants were developed, and finally, the one that best matched her expectations and vision was chosen.",
-    "nocSwietojanskaInfo": "(Click on the poster to enlarge)",
-
-    "ulotkaLatowiczTitle": "Election Flyer",
-    "ulotkaLatowiczDescription": "Flyer designed in Canva for candidates for the city council of Latowicz. After consultations with clients, the flyer was created in a way that would accommodate a large amount of text, match the candidates' image, and feature a modern and simple design. Due to the fact that each flyer for candidates was presented in the same way, one of them is shown.",
-    "ulotkaLatowiczInfo": "(Click on the flyer to enlarge)",
-
-    "banerLatowiczTitle": "Election Banner",
-    "banerLatowiczDescription": "Banner designed in Canva for candidates for the city council of Latowicz. After consultations with clients, the banner was created in a way that would accommodate a large amount of text, match the candidates' image, and feature a modern and simple design. Due to the fact that each banner for candidates was presented in the same way, one of them is shown.",
-    "banerLatowiczInfo": "(Click on the banner to enlarge)"
   },
 
   "controls": {

@@ -20,6 +20,9 @@
   <!-- Twój styl -->
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/main.css" rel="stylesheet" />
+
+  <!-- Animacje -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 
 <body class="bg-black">
@@ -56,7 +59,8 @@
         <div class="col-lg-5 mb-4">
           <img class="img-fluid mb-4 rounded" src="assets/img/photo.jpg" alt="Zdjęcie profilowe - Jowita Kruk" />
         </div>
-        <div class="col-lg-7 mb-4 text-start">
+
+        <div class="col-lg-7 mb-4 text-start" data-aos="fade-left" data-aos-delay="200">
           <p class="text-white-50" data-i18n="about.p1"></p>
           <p class="text-white-50" data-i18n="about.p2"></p>
           <p class="text-white-50 mb-0" data-i18n="about.p3"></p>
@@ -65,8 +69,10 @@
     </div>
   </section>
 
+  <!-- PROJEKTY -->
   <section class="projects-section" id="projects">
 
+    <!-- STRONY-->
     <h3 class="text-white text-center mb-4 " data-i18n="projects.web.title"></h3>
     <div id="webs" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -186,6 +192,7 @@
       </button>
     </div>
 
+    <!-- APLIKACJE-->
     <h3 class="text-white text-center mb-4" data-i18n="projects.mobile.title"></h3>
     <div id="apps" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -219,49 +226,44 @@
       </button>
     </div>
 
+    <!-- GRAFIKI -->
     <h3 class="text-white text-center mb-4" data-i18n="projects.graphics.title"></h3>
     <div id="design" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- Slide 1 -->
+        <!-- OneLife -->
         <div class="carousel-item active" data-bs-interval="5000">
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
             <div class="col-xl-1 col-lg-1"></div>
             <div class="col-xl-5 col-lg-5">
               <div class="ratio ratio-16x9 mb-3 mb-lg-0 d-block mx-auto" style="width:90%">
-                <iframe class="img-fluid-border d-block mx-auto" src="https://www.youtube.com/embed/-spCV1uaTNg"
-                  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-                </iframe>
+          <iframe class="img-fluid-border d-block mx-auto" src="https://www.youtube.com/embed/-spCV1uaTNg"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen/>
+          </iframe>
               </div>
             </div>
             <div class="col-xl-5 col-lg-5 d-flex flex-column">
               <div class="featured-text text-center">
-                <h4 class="text-white">OneLife</h4>
-                <p class="text-white-50">
-                  Projekt, nad którym spędziłam sporo czasu, głównie z powodu ręcznego stworzenia napisu
-                  oraz dodania neonowej poświaty. Napis został zaprezentowany w kilku wariantach: jako GIF
-                  na czarnym tle, plik WebP bez tła oraz ikona 128x128 w tych samych wersjach. Tworzenie
-                  napisów odbyło się w programie Krita, a całe nagranie zostało zrealizowane w DaVinci
-                  Resolve, gdzie dodano tło, w tym muzykę, odgłosy miasta oraz efekt dymu.
-                </p>
+          <h4 class="text-white" data-i18n="projects.graphics.onelifeTitle"></h4>
+          <p class="text-white-50" data-i18n="projects.graphics.onelifeDescription"></p>
               </div>
               <div class="text-center mt-4 margines">
-                <p class="text-secondary">(Kliknij w logo by powiększyć)</p>
+          <p class="text-secondary" data-i18n="projects.graphics.onelifeInfo"></p>
 
-                <!-- Miniatury obrazków -->
-                <img src="assets/img/graphics/Onelife/1L.webp" alt="OneLife Logo Main" class="img-fluid"
-                  style="width: auto; height: 5rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal1L">
+          <!-- Miniatury obrazków -->
+          <img src="assets/img/graphics/Onelife/1L.webp" alt="OneLife Logo Main" class="img-fluid"
+            style="width: auto; height: 5rem; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modal1L">
 
-                <img src="assets/img/graphics/Onelife/1Lmain.webp" alt="OneLife Logo" class="img-fluid"
-                  style="width: auto; height: 5rem; cursor: pointer;" data-bs-toggle="modal"
-                  data-bs-target="#modal1Lmain">
+          <img src="assets/img/graphics/Onelife/1Lmain.webp" alt="OneLife Logo" class="img-fluid"
+            style="width: auto; height: 5rem; cursor: pointer;" data-bs-toggle="modal"
+            data-bs-target="#modal1Lmain">
               </div>
             </div>
             <div class="col-xl-1 col-lg-1"></div>
           </div>
         </div>
 
-        <!-- Slide 2 -->
+        <!-- NOC ŚWIĘTOJAŃSKA -->
         <div class="carousel-item" data-bs-interval="5000">
           <div class="row gx-0 mb-4 mb-lg-5 align-items-center m-4">
             <div class="col-xl-1 col-lg-1"></div>
@@ -283,16 +285,16 @@
 
             <div class="col-xl-5 col-lg-5 d-flex flex-column">
               <div class="featured-text text-center">
-                <h4 class="text-white">Plakat "Noc Świętojańska"</h4>
-                <p class="text-white-50">
-                  Plakat został stworzony w Canvie, a sama rozmowa z klientką miała kluczowy wpływ na
-                  ostateczny wygląd projektu. Dzięki jej cennym sugestiom, plakat przeszedł kilka
-                  metamorfoz. Opracowane zostały różne warianty, a finalnie wybrany został ten, który
-                  najlepiej odpowiadał jej oczekiwaniom i wizji.
+                <h4 class="text-white" data-i18n="projects.graphics.nocSwietojanskaTitle"/>
+                <p class="text-white-50" data-i18n="projects.graphics.nocSwietojanskaDescription">
                 </p>
               </div>
               <div class="text-center mt-4 margines">
-                <p class="text-secondary">(Kliknij w plakat by powiększyć)</p>
+                <p class="text-secondary" data-i18n="projects.graphics.nocSwietojanskaInfo"/>
+                </p>
+              </div>
+              <div class="text-center mt-4 margines">
+                <p class="text-secondary"></p>
               </div>
             </div>
             <div class="col-xl-1 col-lg-1"></div>
@@ -479,6 +481,7 @@
       </button>
     </div>
 
+    <!-- SIECI NEUROONOWE -->
     <h3 class="text-white text-center mb-4" data-i18n="projects.ai.title"></h3>
     <div id="apps" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -515,7 +518,6 @@
     </div>
 
   </section>
-
 
   <!-- KONTAKT -->
   <section class="signup-section" id="contact">
@@ -621,6 +623,7 @@
 
   <!-- JS (Bootstrap) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>

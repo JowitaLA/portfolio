@@ -60,6 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
+  if (window.AOS) {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-in-out",
+    });
+  }
+
   // (Opcjonalnie) Jeżeli i18n nadpisuje stopkę ASYNCHRONICZNIE po chwili,
   // można dodać krótkie opóźnienie, aby mieć pewność:
   //
