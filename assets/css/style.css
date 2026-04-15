@@ -183,7 +183,6 @@ section {
   padding-bottom: 2em;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
-  *color: #fff;
 }
 
 /*
@@ -382,7 +381,7 @@ section {
     position: absolute;
     width: 100%;
     border-top: 1px solid #eee;
-    background-color: #808080\9;
+    background-color: #808080;
     z-index: 100;
   }
 
@@ -445,10 +444,10 @@ section {
   font-size: 1.5em;
   margin-left: auto;
   margin-right: auto;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
 }
 
 /* Kontener na projekty */
@@ -476,10 +475,10 @@ section {
   -moz-transition: transform 0.3s;
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .project:hover {

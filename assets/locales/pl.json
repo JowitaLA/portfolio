@@ -4,6 +4,12 @@
     "description": "Portfolio: projektowanie stron, grafik, modeli AI, aplikacje web i mobilne."
   },
 
+  "menu": {
+    "main": "Strona Główna",
+    "about": "Kim jestem",
+    "projects": "Lista Projektów" 
+  },
+
   "header": {
     "name": "Jowita Kruk",
     "subtitle": "Junior Software Developer.",

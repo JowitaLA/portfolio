@@ -1,6 +1,13 @@
 {
   "meta": {
-    "title": "Portfolio: Jowita Raven"
+    "title": "Portfolio: Jowita Raven",
+    "description": "Portfolio: web design, graphics, AI models, web and mobile applications."
+  },
+
+  "menu": {
+    "main": "Home",
+    "about": "About",
+    "projects": "Projects"
   },
 
   "header": {
